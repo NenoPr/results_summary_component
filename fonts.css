@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Hanken";
+    src: url("assets/fonts/static/HankenGrotesk-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hanken";
+    src: url("assets/fonts/static/HankenGrotesk-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hanken";
+    src: url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+    font-weight: bolder;
+    font-style: normal;
+}

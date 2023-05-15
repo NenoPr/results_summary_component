@@ -1,0 +1,205 @@
+@import url("fonts.css");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Hanken";
+}
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-self: center;
+  box-shadow: 0.5rem 0.5rem 1rem 0.25rem rgb(208, 214, 228);
+  border-radius: 2rem;
+  width: fit-content;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 300px;
+}
+
+.results-header {
+  font-size: 1.5rem;
+  color: hsl(241, 100%, 89%);
+}
+
+.score {
+  font-size: 4rem;
+  color: white;
+}
+
+.score-text {
+  font-weight: bold;
+  color: hsl(241, 100%, 90%);
+}
+
+.results-header-2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.results-text {
+  width: 80%;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+/* ---- Summary ---- */
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: white;
+}
+
+.summary-header {
+  align-self: flex-start;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.summary-contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-rows: 1fr;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card-icon {
+  grid-column: 1;
+}
+
+.card-text {
+  grid-column: 2;
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.card-score-container {
+  grid-column: 3;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.card-score {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.card-full-score {
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.card-separator {
+  color: rgba(128, 128, 128, 0.5);
+  margin-left: 0.2rem;
+}
+
+.card-reaction-container {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.card-reaction-text {
+  color: hsla(0, 100%, 67%);
+}
+
+.card-memory-container {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.card-memory-text {
+  color: hsla(39, 100%, 56%);
+}
+
+.card-verbal-container {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.card-verbal-text {
+  color: hsla(166, 100%, 37%);
+}
+
+.card-visual-container {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.card-visual-text {
+  color: hsla(234, 85%, 45%);
+}
+
+.summary-continue {
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  border-radius: 2rem;
+  width: 70%;
+  text-align: center;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: hsl(224, 30%, 27%);
+}
+
+.summary-continue:hover {
+  background: linear-gradient(rgb(79, 93, 225), hsla(234, 85%, 45%));
+}
+
+.attribution {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .results-container {
+    max-width: none;
+  }
+}

@@ -198,6 +198,7 @@ body {
 @media (max-width: 800px) {
   .content-container {
     flex-direction: column;
+    box-shadow: none;
   }
   .results-container {
     max-width: none;

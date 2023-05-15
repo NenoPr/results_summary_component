@@ -202,5 +202,8 @@ body {
   }
   .results-container {
     max-width: none;
+    border-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
   }
 }
